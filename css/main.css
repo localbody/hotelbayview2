@@ -1,7 +1,13 @@
+html,
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     font-weight: normal;
+    outline: none;
+}
+
+input,
+select {
     outline: none;
 }
 
@@ -26,7 +32,7 @@ sup {
     cursor: pointer;
     color: #fff;
     line-height: 32px;
-    height: 32px;
+    height: 3;
     text-align: center;
     text-transform: uppercase;
     font-size: 9px;
@@ -34,7 +40,6 @@ sup {
     letter-spacing: 0.85px;
     display: block;
 }
-
 
 .small-divider {
     width: 24px;
@@ -84,6 +89,7 @@ sup {
     display: inline-block;
 }
 
+
 /* header */
 
 .header {
@@ -126,6 +132,7 @@ sup {
     padding: 0 0 3px 0;
     border-bottom: 1px solid #fff;
 }
+
 
 /* footer */
 

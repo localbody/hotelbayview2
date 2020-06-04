@@ -147,6 +147,7 @@
 
 
 /* about */
+
 .about {
     display: flex;
     box-sizing: border-box;
@@ -231,7 +232,6 @@
     font-size: 42px;
     margin-top: 15px;
     margin-bottom: 45px;
-
 }
 
 .rooms__items {
@@ -288,7 +288,6 @@
     display: flex;
     margin-top: 12px;
     margin-bottom: 12px;
-
 }
 
 .big-room-description__item {
@@ -426,6 +425,7 @@
     line-height: 2;
 }
 
+
 /* text-info */
 
 .info {
@@ -444,4 +444,108 @@
     font-size: 19px;
     text-align: center;
     line-height: 1.8;
+}
+
+
+/* media */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .top {
+        height: 260px;
+        padding-top: 40px;
+        margin-bottom: 70px;
+    }
+    .top__content {
+        width: 100%;
+    }
+    .top__subtitle {
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+    .button {
+        height: 25px;
+        line-height: 3;
+    }
+    .button--transparent {
+        width: 145px;
+    }
+    .check-form {
+        margin-top: 70px;
+    }
+    .form {
+        height: 83px;
+    }
+    .form__item-check {
+        grid-template-areas: "label" "input" "month"
+    }
+    .form__select {
+        height: initial;
+        margin-top: 0;
+    }
+    .form__button {
+        padding-top: 30px;
+    }
+    .form__item:not(.form__item-button) {
+        margin-top: 10px;
+    }
+    .about {
+        padding-top: 50px;
+        height: 350px;
+    }
+    .about__info {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .about__subtitle {
+        font-size: 43px;
+    }
+    .button--toupe {
+        width: 115px;
+    }
+    .about__image--img1 {
+        width: 179px;
+        height: 242px;
+        left: 175px;
+    }
+    .about__image--img2 {
+        width: 245px;
+        height: 164px;
+        top: 120px;
+    }
+    .about__image--img3 {
+        width: 232px;
+        height: 155px;
+        top: 0px;
+        left: -20px;
+    }
+    .check-all__image {
+        width: 257px;
+        height: 172px;
+    }
+    .check-all__wrapper {
+        width: initial;
+    }
+    .check-all__subtitle {
+        font-size: 43px;
+        margin-bottom: 0;
+    }
+    .check-all__info {
+        padding: 51px 45px;
+    }
+    .check-all__text {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .check-all__paragraph {
+        font-size: 9px;
+    }
+    .info__paragraph {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    body {
+        background-color: blue;
+    }
 }
