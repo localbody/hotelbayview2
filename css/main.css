@@ -2,10 +2,24 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     font-weight: normal;
+    outline: none;
 }
 
 a {
     text-decoration: none;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.mt--10 {
+    margin-top: 10px;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
 }
 
 .button {
@@ -18,8 +32,57 @@ a {
     font-size: 9px;
     font-weight: 900;
     letter-spacing: 0.85px;
+    display: block;
 }
 
+
+.small-divider {
+    width: 24px;
+    height: 2px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-divider--gray {
+    background-color: #878787;
+}
+
+.small-divider--white {
+    background-color: white;
+}
+
+.title {
+    font-size: 10.5px;
+    letter-spacing: 1.16px;
+    text-transform: uppercase;
+}
+
+.title--white {
+    color: white;
+}
+
+.title--gray {
+    color: #878787;
+}
+
+.icon-plan {
+    background-image: url(../images/icons/plan.svg);
+}
+
+.icon-user {
+    background-image: url(../images/icons/user.svg);
+}
+
+.bg-reviews {
+    width: 21px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: 3px;
+    display: inline-block;
+}
 
 /* header */
 
@@ -62,4 +125,27 @@ a {
     color: #fff;
     padding: 0 0 3px 0;
     border-bottom: 1px solid #fff;
+}
+
+/* footer */
+
+.footer {
+    /*  */
+    box-sizing: border-box;
+    width: 100%;
+    height: 68px;
+    padding-top: 30px;
+    background: #151515;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    margin-left: 350px;
+}
+
+.footer-menu-item {
+    color: white;
+    font-size: 12px;
 }
