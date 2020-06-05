@@ -28,6 +28,20 @@ sup {
     padding-left: 0 !important;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-button {
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
 .button {
     cursor: pointer;
     color: #fff;
@@ -155,4 +169,31 @@ sup {
 .footer-menu-item {
     color: white;
     font-size: 12px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {}
+
+@media screen and (max-width: 1023px) {
+    .nav {
+        display: none;
+    }
+
+    .nav--show {
+        display: block;
+    }
+
+    .header__menu-button {
+        display: block;
+        margin-right: 57px;
+        background-image: url(../images/icons/menu.svg);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .header__menu-button--close {
+        background-image: url(../images/icons/close.svg);
+    }
+
+
 }
