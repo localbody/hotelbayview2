@@ -6,6 +6,8 @@ body {
     outline: none;
 }
 
+/* close commented backslash hack */
+
 input,
 select {
     outline: none;
@@ -46,7 +48,6 @@ sup {
     cursor: pointer;
     color: #fff;
     line-height: 32px;
-    height: 3;
     text-align: center;
     text-transform: uppercase;
     font-size: 9px;
@@ -195,5 +196,18 @@ sup {
         background-image: url(../images/icons/close.svg);
     }
 
+    .footer {
+        height: 44px;
+        padding-top: 15px;
+    }
+
+    .footer__menu {
+        margin-left: 44px;
+        width: 410px;
+    }
+
+    .footer-menu-item {
+        font-size: 16px;
+    }
 
 }
