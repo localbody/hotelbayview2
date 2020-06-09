@@ -6,6 +6,7 @@ body {
     outline: none;
 }
 
+
 /* close commented backslash hack */
 
 input,
@@ -54,6 +55,7 @@ sup {
     font-weight: 900;
     letter-spacing: 0.85px;
     display: block;
+    transition: all 0.3s;
 }
 
 .small-divider {
@@ -172,18 +174,15 @@ sup {
     font-size: 12px;
 }
 
-
 @media screen and (min-width: 1024px) and (max-width: 1439px) {}
 
 @media screen and (max-width: 1023px) {
     .nav {
         display: none;
     }
-
     .nav--show {
         display: block;
     }
-
     .header__menu-button {
         display: block;
         margin-right: 57px;
@@ -191,23 +190,18 @@ sup {
         cursor: pointer;
         transition: all 0.3s;
     }
-
     .header__menu-button--close {
         background-image: url(../images/icons/close.svg);
     }
-
     .footer {
         height: 44px;
         padding-top: 15px;
     }
-
     .footer__menu {
         margin-left: 44px;
         width: 410px;
     }
-
     .footer-menu-item {
         font-size: 16px;
     }
-
 }

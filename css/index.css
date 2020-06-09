@@ -40,14 +40,30 @@
     width: 133px;
 }
 
+.button--transparent:hover {
+    border: 2px solid #c19b76;
+    background-color: #c19b76;
+}
+
 .button--toupe {
-    background: #c19b76;
+    background-color: #c19b76;
     width: 105px;
+    border: 2px solid white;
+}
+
+.button--toupe:hover {
+    border: 2px solid #c19b76;
+    background-color: white;
+    color: #c19b76;
 }
 
 .button--black {
     background-color: #151515;
     width: 175px;
+}
+
+.button--black:hover {
+    background-color: #c19b76;
 }
 
 .check-form {
@@ -143,6 +159,11 @@
     padding-top: 33.3%;
     padding-left: 25px;
     padding-right: 25px;
+    transition: all 0.3s;
+}
+
+.form__button:hover {
+    background-color: #c19b76;
 }
 
 
@@ -455,146 +476,115 @@
         padding-top: 40px;
         margin-bottom: 70px;
     }
-
     .top__content {
         width: 100%;
     }
-
     .top__subtitle {
         margin-bottom: 30px;
         font-size: 32px;
     }
-
     .button {
         height: 25px;
         line-height: 3;
     }
-
     .button--transparent {
         width: 145px;
     }
-
     .check-form {
         margin-top: 70px;
     }
-
     .form {
         height: 83px;
     }
-
     .form__item-check {
         grid-template-areas: "label""input""month"
     }
-
     .form__select {
         height: initial;
         margin-top: 0;
     }
-
     .form__button {
         padding-top: 30px;
     }
-
     .form__item:not(.form__item-button) {
         margin-top: 10px;
     }
-
     .about {
         padding-top: 50px;
         height: 350px;
     }
-
     .about__info {
         padding-left: 90px;
         padding-right: 90px;
     }
-
     .about__subtitle {
         font-size: 43px;
     }
-
     .button--toupe {
         width: 115px;
     }
-
     .about__image--img1 {
         width: 179px;
         height: 242px;
         left: 175px;
     }
-
     .about__image--img2 {
         width: 245px;
         height: 164px;
         top: 120px;
     }
-
     .about__image--img3 {
         width: 232px;
         height: 155px;
         top: 0px;
         left: -20px;
     }
-
     .check-all__image {}
-
     .check-all__wrapper {
         width: 100%;
     }
-
     .check-all__subtitle {
         font-size: 43px;
         margin-bottom: 0;
     }
-
     .check-all__info {
         padding: 51px 45px;
     }
-
     .check-all__text {
         margin-top: 10px;
         margin-bottom: 20px;
     }
-
     .check-all__paragraph {
         font-size: 9px;
     }
-
     .info__paragraph {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 1023px) {
-
     body {
         /* min-width: 640px; */
     }
-
     .header {
         height: 34px;
     }
-
     .logo__image {
         height: 19px;
     }
-
     .header__wrapper {
         padding-top: 3px;
         width: 100%;
         flex-direction: column;
     }
-
     .logo {
         margin-top: 9px;
         margin-left: 45px;
     }
-
     nav {
         background-color: #1c1c1c;
         z-index: 999;
     }
-
     .nav__items {
         flex-direction: column;
         width: 200px;
@@ -602,41 +592,33 @@
         margin-right: 57px;
         margin-bottom: 57px;
     }
-
     .nav__item {
         line-height: 3;
         border-bottom: 5px solid #c19b76;
         text-align: right;
     }
-
     .nav__link {
         color: white;
         text-transform: uppercase;
         font-size: 14px;
     }
-
     .nav__link--active {
         border: none;
     }
-
     .top {
         padding-top: 0;
         height: 200px;
     }
-
     .top__subtitle {
         font-size: 32px;
         margin-bottom: 20px;
     }
-
     .top .title--white {
         display: none;
     }
-
     hr {
         display: none;
     }
-
     .button--transparent {
         width: 240px;
         height: 52px;
@@ -644,65 +626,48 @@
         font-weight: 900;
         line-height: 3;
     }
-
     .check-form {
         width: 526px;
         margin-top: 55px;
     }
-
     .form {
         flex-wrap: wrap;
     }
-
     .form__item-check {
-        grid-template-areas:
-            "label"
-            "input"
-            "month";
-
+        grid-template-areas: "label" "input" "month";
     }
-
     .form__item-check {
         justify-content: center;
     }
-
     .form__select {
         height: 21px;
         margin-top: 3px;
         margin-bottom: 7px;
     }
-
     .form__item-button {
         flex: 100%;
         height: 76px;
     }
-
     .form__button {
         padding-top: 0;
         line-height: 76px;
         font-size: 22px;
     }
-
     .about {
         padding-top: 245px;
         flex-direction: column;
         width: 100%;
         margin-bottom: 265px;
     }
-
     .title--gray {
         font-size: 18px;
     }
-
-
     .about__subtitle {
         font-size: 36px;
     }
-
     .about__info {
         width: 100%;
     }
-
     .about__image--img1 {
         width: 213px;
         height: 286px;
@@ -710,76 +675,59 @@
         left: initial;
         right: 0;
     }
-
     .about__image--img2 {
         width: 298px;
         height: 198px;
         top: 67px;
         left: 0;
     }
-
     .about__image--img3 {
         width: 280px;
         height: 187px;
         top: 122px;
         left: 33%;
     }
-
     .rooms {
         padding-top: 42px;
     }
-
     .big-room-description {
         display: none;
     }
-
     .rooms__items {
         grid-template-columns: 1fr;
         gap: 25px;
         width: 100%;
         justify-items: center;
     }
-
     .room {
         width: 428px;
     }
-
     .rooms__item--4small {
         grid-template-columns: 1fr;
-
     }
-
     .room--gallery {
         display: none;
     }
-
     .room--grand-piazza-suite {
         display: none;
     }
-
-
     .check-all__wrapper {
         flex-wrap: wrap;
         width: 100%;
-
     }
-
     .check-all__images {
         flex: 100%;
         height: 105px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
-
     .check-all .title--white {
         font-size: 18px;
     }
-
     .check-all__subtitle {
         font-size: 32px;
         margin-bottom: 0;
     }
-
     .check-all__info {
         flex: 100%;
         display: flex;
@@ -788,26 +736,20 @@
         text-align: center;
         padding: 35px 95px;
     }
-
     .check-all__text {
         font-size: 22px;
         margin-bottom: 20px;
-
     }
-
     .button--black {
         width: 335px;
         height: 61px;
         font-size: 18px;
         line-height: 3.33;
     }
-
     .info__wrapper {
         width: 100%;
     }
-
     .info__paragraph {
         font-size: 16px;
     }
-
 }
