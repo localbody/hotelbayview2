@@ -31,6 +31,10 @@ sup {
     padding-left: 0 !important;
 }
 
+.pl-none {
+    padding-left: 0 !important;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -104,6 +108,90 @@ sup {
     text-align: center;
     margin-right: 3px;
     display: inline-block;
+}
+
+.bg--adriatic-suite {
+    /*  */
+    background-image: url(../images/rooms/adriatic-suite.jpg);
+}
+
+.bg--top--atelier {
+    /*  */
+    background-image: url(../images/rooms/atelier.jpg);
+}
+
+.bg--top--gallery {
+    /*  */
+    background-image: url(../images/rooms/gallery.jpg);
+}
+
+.bg--top--grand-piazza-suite {
+    /*  */
+    background-image: url(../images/rooms/grand-piazza-suite.jpg);
+}
+
+.icon-guest {
+    background-image: url(../images/icons/user.svg);
+}
+
+.icon-square {
+    background-image: url(../images/icons/plan.svg);
+}
+
+.icon-price {
+    background-image: url(../images/icons/price.svg);
+}
+
+.icon-week-price {
+    background-image: url(../images/icons/week-price.svg);
+}
+
+.icon-television {
+    background-image: url(../images/icons/television.svg);
+}
+
+.icon-no-smoking {
+    background-image: url(../images/icons/no-smoking.svg);
+}
+
+.icon-beach {
+    background-image: url(../images/icons/beach.svg);
+}
+
+.icon-bathroom {
+    background-image: url(../images/icons/bathroom.svg);
+}
+
+.icon-bike {
+    background-image: url(../images/icons/bike.svg);
+}
+
+.icon-breakfast {
+    background-image: url(../images/icons/breakfast.svg);
+}
+
+.icon-drink {
+    background-image: url(../images/icons/drink.svg);
+}
+
+.icon-loundry {
+    background-image: url(../images/icons/loundry.svg);
+}
+
+.icon-beds {
+    background-image: url(../images/icons/beds.svg);
+}
+
+
+/* main */
+
+.top__subtitle {
+    color: white;
+    font-family: 'Gilda Display', serif;
+    font-size: 52.5px;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 
