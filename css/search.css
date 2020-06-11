@@ -1,0 +1,380 @@
+.button--white-toupe {
+    border: 2px solid #c19b76;
+    color: #c19b76;
+    font-size: 8.5px;
+    width: 165px;
+}
+
+.button--white-toupe:hover {
+    background-color: #c19b76;
+    color: white;
+}
+
+
+/* main begin */
+
+.main {
+    display: grid;
+}
+
+.top--rooms {
+    background-image: url(../images/search-background.jpg);
+    height: 290px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top__subtitle--rooms {
+    margin-top: 95px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    width: 880px;
+    margin: 0 auto;
+    padding-top: 34px;
+    margin-bottom: 77px;
+}
+
+
+/* main end */
+
+
+/* .filter begin */
+
+hr {
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 21px;
+    height: 1px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: none;
+    padding: 0;
+}
+
+.filter {
+    max-width: 278px;
+}
+
+.date-guests {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 278px;
+    height: 312px;
+    background-color: #151515;
+    color: white;
+}
+
+.filter__title {
+    font-family: 'Gilda Display', serif;
+    font-size: 15px;
+    /* line-height: 1.37; */
+    letter-spacing: -0.6px;
+    margin-bottom: 15px;
+}
+
+.filter__title--white {
+    margin-top: 38px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.filter__title--black {
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #1c1c1c;
+}
+
+.filter__items {
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 92px 65px;
+    row-gap: 14px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.filter__item {
+    display: grid;
+}
+
+.filter__item--date {
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "label label""date month";
+}
+
+.filter__item--count {
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    grid-template-areas: "label""count";
+}
+
+.filter__label {
+    grid-area: label;
+    align-self: center;
+    justify-self: center;
+    font-size: 11px;
+    line-height: 2.28;
+    letter-spacing: 0.72px;
+}
+
+.filter__input {
+    border: none;
+    font-size: 37.5px;
+    width: 44px;
+    background: transparent;
+    font-family: 'Gilda Display', serif;
+    font-size: 37.5px;
+    line-height: 0.55;
+    letter-spacing: -2.25px;
+    text-align: center;
+    color: #c19b76;
+}
+
+.filter__input--date {
+    grid-area: date;
+    justify-self: end;
+}
+
+.filter__input--count {
+    grid-area: count;
+    justify-self: center;
+}
+
+.filter__month {
+    grid-area: month;
+    justify-self: center;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-family: 'Gilda Display', serif;
+    line-height: 2.28;
+    letter-spacing: -0.54px;
+    text-align: center;
+    color: #c19b76;
+    padding-left: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.filter__month option {
+    background: #000;
+    color: white;
+    padding: 5px;
+}
+
+.services__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.filter__square {
+    width: 42px;
+    height: 24px;
+    background-color: #1c1c1c;
+    border: none;
+    font-size: 9.5px;
+    line-height: 2.16;
+    letter-spacing: -0.19px;
+    color: #ffffff;
+    padding-left: 7px;
+    margin-left: 3px;
+}
+
+.filter__square::placeholder {
+    font-size: 9.5px;
+    line-height: 2.16;
+    letter-spacing: -0.19px;
+    color: #ffffff;
+}
+
+.input-dummy {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.room-size {
+    font-size: 9px;
+    letter-spacing: normal;
+    color: #878787;
+}
+
+.reviews__items {
+    display: flex;
+}
+
+.reviews__item {
+    width: 30px;
+    height: 25px;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 9.5px;
+    line-height: 25px;
+    letter-spacing: -0.19px;
+    text-align: center;
+    margin-right: 11px;
+    transition: all 0.25s;
+}
+
+.reviews__item:hover {
+    background-color: #c19b76;
+}
+
+
+/* .filter end */
+
+
+/* .rooms begin */
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 22px;
+    column-gap: 20px;
+    row-gap: 28px;
+}
+
+.room__description {
+    /*  */
+    margin: 22px;
+}
+
+.room__title {
+    /*  */
+    font-family: 'Gilda Display', serif;
+    line-height: 0.8;
+    color: #000;
+    font-size: 22.5px;
+}
+
+.room-detail--big {
+    width: 428px;
+    background-color: white;
+}
+
+.room-detail--small {
+    width: 278px;
+    height: 387px;
+    border: solid 0.8px #f1f1f1;
+}
+
+.room-detail-img {
+    width: 100%;
+    height: 185px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 160px;
+    padding-left: 22px;
+}
+
+.room-detail-items {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.room-detail-item {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 2.28;
+    letter-spacing: normal;
+    color: #878787;
+    text-transform: uppercase;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 25px;
+    margin-right: 10px;
+    height: 19px;
+}
+
+.room-detail-about {
+    color: #878787;
+    line-height: 2;
+    padding-bottom: 15px;
+}
+
+.room-detail__room-name {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+}
+
+.room-detail__room-wrapper {
+    padding: 22px 22px;
+}
+
+.room-detail__room-title {
+    font-size: 22.5px;
+    font-family: 'Gilda Display', serif;
+    line-height: 0.8;
+    color: #000;
+}
+
+
+/* .rooms end */
+
+
+/* .main end */
+
+
+/* checkbox begin */
+
+.services__label {
+    line-height: 1.95;
+    letter-spacing: 0.63px;
+    color: #878787;
+}
+
+.check__input {
+    /* position: absolute; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.check__box {
+    /* position: absolute; */
+    /* margin-left: -1.2em; */
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.check__mark {
+    fill: white;
+}
+
+.check__square {
+    fill: none;
+    stroke-width: 1;
+    stroke: #b3b3b3
+}
+
+
+/* Checked */
+
+.check__input:checked+* .check__mark {
+    fill: #c19b76;
+}
+
+
+/* checkbox end */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /*  */
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    /*  */
+}
