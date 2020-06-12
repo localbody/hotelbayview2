@@ -3,59 +3,26 @@
 
 /* top */
 
-.top {
+.top--index {
     /*  */
     box-sizing: border-box;
     height: 640px;
-    background-image: url(../images/main-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../images/bg-home.jpg);
     background-position: center;
     padding-top: 125px;
     text-transform: uppercase;
 }
 
-.top__content {
-    /*  */
-    width: 540px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.top--index::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+    width: 100%;
+    height: 260px;
+    top: 55px;
 }
 
-.button--transparent {
-    border: 2px solid white;
-    background: transparent;
-    width: 133px;
-}
-
-.button--transparent:hover {
-    border: 2px solid #c19b76;
-    background-color: #c19b76;
-}
-
-.button--toupe {
-    background-color: #c19b76;
-    width: 105px;
-    border: 2px solid white;
-}
-
-.button--toupe:hover {
-    border: 2px solid #c19b76;
-    background-color: white;
-    color: #c19b76;
-}
-
-.button--black {
-    background-color: #151515;
-    width: 175px;
-}
-
-.button--black:hover {
-    background-color: #c19b76;
-}
 
 .check-form {
     /*  */
@@ -464,10 +431,9 @@
 /* media */
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .top {
+    .top--index {
         height: 260px;
         padding-top: 40px;
-        margin-bottom: 70px;
     }
 
     .top__content {
@@ -479,14 +445,6 @@
         font-size: 32px;
     }
 
-    .button {
-        height: 25px;
-        line-height: 3;
-    }
-
-    .button--transparent {
-        width: 145px;
-    }
 
     .check-form {
         margin-top: 70px;
@@ -527,9 +485,6 @@
         font-size: 43px;
     }
 
-    .button--toupe {
-        width: 115px;
-    }
 
     .about__image--img1 {
         width: 179px;
@@ -580,12 +535,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+
     .logo__image {
         height: 19px;
-    }
-
-    body {
-        /* min-width: 640px; */
     }
 
     .header {
@@ -636,11 +588,6 @@
         border: none;
     }
 
-    .top {
-        padding-top: 0;
-        height: 200px;
-    }
-
     .top__subtitle {
         font-size: 32px;
         margin-bottom: 20px;
@@ -652,14 +599,6 @@
 
     hr {
         display: none;
-    }
-
-    .button--transparent {
-        width: 240px;
-        height: 52px;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 3;
     }
 
     .check-form {
@@ -695,6 +634,19 @@
         line-height: 76px;
         font-size: 22px;
     }
+
+    .top--index {
+        padding-top: 0;
+        height: 200px;
+        top: 34px
+    }
+
+
+    .top--index::before {
+        height: 200px;
+        top: 34px
+    }
+
 
     .about {
         padding-top: 245px;
@@ -801,13 +753,6 @@
     .check-all__text {
         font-size: 22px;
         margin-bottom: 20px;
-    }
-
-    .button--black {
-        width: 335px;
-        height: 61px;
-        font-size: 18px;
-        line-height: 3.33;
     }
 
     .info__wrapper {

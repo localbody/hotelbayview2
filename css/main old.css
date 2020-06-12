@@ -250,16 +250,7 @@ sup {
 
 /* .footer end */
 
-.divider {
-    width: 100%;
-    height: 3px;
-    background-color: #f9f9f9;
-}
 
-.my-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .mt-10 {
     margin-top: 10px;
@@ -269,9 +260,7 @@ sup {
     margin-top: 15px;
 }
 
-.mt-30 {
-    margin-top: 30px;
-}
+
 
 .mb-30 {
     margin-bottom: 30px;
@@ -281,11 +270,7 @@ sup {
     margin-bottom: 40px;
 }
 
-.room-description {
-    line-height: 1.95;
-    letter-spacing: 0.63px;
-    color: #878787;
-}
+
 
 .hotel-bayview {
     line-height: 1.95;
@@ -299,36 +284,44 @@ sup {
 }
 
 @media screen and (max-width: 1440px) {
+
     /*  */
     .top {
         background-attachment: initial;
     }
+
     .top__subtitle {
         font-size: 32px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+
     /*  */
     .room-detail--big {
         width: 305px;
     }
+
     .top__subtitle {
         width: 600px;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
+
     /*  */
     .header-menu {
         display: none;
     }
+
     .logo {
         margin-left: 45px;
     }
+
     .top__subtitle {
         width: 300px;
     }
+
     .button--transparent {
         width: 240px;
         height: 52px;

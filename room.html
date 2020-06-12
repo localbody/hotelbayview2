@@ -5,51 +5,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Room</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/room.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Roboto:wght@400;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/room.css">
+  <!-- <link rel="stylesheet" href="./css/grids.css"> -->
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <div class="logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__img" src="./img/svg/luxury-hotel.svg" alt="logo" />
-        </a>
+  <header>
+    <div class="header">
+      <div class="header__wrapper">
+
+        <div class="wrapper">
+          <div class="logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__image" src="./images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="header__menu-button"></div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="search.html">Rooms</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="room.html">Single Room</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Booking</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Out news</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Contact</a>
+            </li>
+          </ul>
       </div>
-      <nav class="header-menu">
-        <ul class="header-menu__list">
-          <li class="header-menu__item">
-            <a class="header-menu__link" href="index.html">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-menu__link" href="search.html">Rooms</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-menu__link header-menu__link--active" href="room.html">Single Room</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-menu__link" href="#">Booking</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-menu__link" href="#">Our News</a>
-          </li>
-          <li class="header-menu__item">
-            <a class="header-menu__link" href="#">Contact</a>
-          </li>
-        </ul>
       </nav>
+    </div>
     </div>
   </header>
 
+
   <main class="main">
-    <section class="top top--bg-room">
+    <section class="top top--room">
       <div class="top__sub">
-        <nav class="top__submenu">
+        <div class="top__submenu">
           <ul class="top__submenu-items">
             <li><a class="top__submenu-link" href="#">Description</a></li>
             <li><a class="top__submenu-link" href="#">Room services</a></li>
@@ -57,7 +65,7 @@
             <li><a class="top__submenu-link" href="#">Gallery</a></li>
             <li><a class="top__submenu-link" href="#">Reviews</a></li>
           </ul>
-        </nav>
+        </div>
 
         <div class="top__price">
           <span class="top__price--value">300</span>
@@ -121,7 +129,7 @@
             coffee/tea making facilities. Modern-style bathroom includes a
             walk-in shower, a bath tub, a hairdryer and free toiletries. It is
             decorated with oils on canvas, rare photographs, and exceptional
-            decorations by renowned local and international artists.<br /><br /><br />Guests
+            decorations by renowned local and international artists.<br />Guests
             will receive complimentary jug of water, natural sirup and a fruit
             basket once upon arrival.
           </p>
@@ -182,9 +190,9 @@
             </div>
           </div>
 
-          <button class="button button--toupe">
+          <a class="button button--toupe" href="">
             Book now
-          </button>
+          </a>
         </div>
       </div>
     </section>

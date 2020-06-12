@@ -1,10 +1,21 @@
 /* .main begin */
 
-.top--bg-room {
-    background-image: url(../img/top-room.jpg);
+.top--room {
+    box-sizing: border-box;
+    background-image: url(../images/bg-room.jpg);
     padding-top: 210px;
     height: 285px;
     background-position: center;
+}
+
+.top--room::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+    width: 100%;
+    height: 285px;
+    top: 55px;
 }
 
 .top__sub {
@@ -14,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .top__submenu {
@@ -96,6 +108,12 @@
 .room-info__list {
     display: flex;
     justify-content: space-around;
+}
+
+.room-description {
+    line-height: 1.95;
+    letter-spacing: 0.63px;
+    color: #878787;
 }
 
 .room-info__item {
@@ -242,20 +260,33 @@
     margin-top: 3px;
 }
 
-.button {
-    width: 233px;
-    height: 32px;
-    color: white;
-    font-size: 8.5px;
-    font-weight: 900;
-    line-height: 2.41;
-    letter-spacing: 0.85px;
-    text-transform: uppercase;
-}
-
-.button--toupe {
-    background-color: #c19b76;
-}
 
 
 /* .main end */
+
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background-color: #f9f9f9;
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .top--room::before {
+        height: 285px;
+        top: 34px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+    .top--room::before {
+        height: 285px;
+        top: 34px;
+    }
+
+}

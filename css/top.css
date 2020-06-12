@@ -3,13 +3,8 @@
 .top {
     /*  */
     box-sizing: border-box;
-    height: 640px;
-    background-image: url(../images/main-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 125px;
-    text-transform: uppercase;
 }
 
 .top__content {
@@ -20,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .top__subtitle {
@@ -36,7 +32,7 @@
     .top {
         height: 260px;
         padding-top: 40px;
-        margin-bottom: 70px;
+        /* margin-bottom: 70px; */
     }
 
     .top__content {
