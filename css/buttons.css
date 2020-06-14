@@ -45,7 +45,6 @@
     color: #c19b76;
 }
 
-
 .button--black {
     background-color: #151515;
     width: 175px;
@@ -67,6 +66,7 @@
     color: white;
 }
 
+
 /* media */
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -74,13 +74,20 @@
         height: 25px;
         line-height: 3;
     }
-
     .button--transparent {
         width: 145px;
     }
-
     .button--toupe {
         width: 115px;
+    }
+    .button--white-toupe {
+        font-size: 9px;
+        height: 28px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 85px;
+        line-height: 1.25;
+        padding-top: 7px;
     }
 }
 
@@ -92,7 +99,6 @@
         font-weight: 900;
         line-height: 3;
     }
-
     .button--black {
         width: 335px;
         height: 61px;

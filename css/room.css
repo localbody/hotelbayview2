@@ -261,9 +261,7 @@
 }
 
 
-
 /* .main end */
-
 
 .divider {
     width: 100%;
@@ -271,22 +269,16 @@
     background-color: #f9f9f9;
 }
 
-
-
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-
     .top--room::before {
         height: 285px;
-        top: 34px;
+        top: 47px;
     }
-
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-
     .top--room::before {
         height: 285px;
-        top: 34px;
+        top: 36px;
     }
-
 }
