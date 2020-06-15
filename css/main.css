@@ -3,6 +3,7 @@
 @import "top.css";
 @import "footer.css";
 @import "buttons.css";
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -34,6 +35,16 @@ sup {
 
 .mt-30 {
     margin-top: 30px;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .my-30 {
@@ -199,9 +210,11 @@ sup {
     .nav {
         display: none;
     }
+
     .nav--show {
         display: block;
     }
+
     .header__menu-button {
         display: block;
         margin-right: 57px;
@@ -209,17 +222,21 @@ sup {
         cursor: pointer;
         transition: all 0.3s;
     }
+
     .header__menu-button--close {
         background-image: url(../images/icons/close.svg);
     }
+
     .footer {
         height: 44px;
         padding-top: 15px;
     }
+
     .footer__menu {
         margin-left: 44px;
         width: 410px;
     }
+
     .footer-menu-item {
         font-size: 16px;
     }

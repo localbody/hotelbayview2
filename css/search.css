@@ -197,6 +197,10 @@ hr {
     margin-right: 5px;
 }
 
+.rooms__title {
+    display: none;
+}
+
 .room-size {
     font-size: 9px;
     letter-spacing: normal;
@@ -375,77 +379,98 @@ hr {
         height: 290px;
         top: 47px;
     }
+
     .filter {
         max-width: 210px;
     }
+
     .date-guests {
         height: 223px;
     }
+
     .filter__title {
         font-size: 11px;
     }
+
     .filter__title--white {
         margin-top: 28px;
         margin-bottom: 28px;
     }
+
     .filter__label {
         font-size: 9px;
     }
+
     .filter__input {
         font-size: 27px;
     }
+
     .filter__month {
         font-size: 9px;
     }
+
     .filter__items {
         gap: 9px;
     }
+
     .services__items {
         column-gap: 9px;
     }
+
     .services__label {
         font-size: 9px;
         line-height: 2;
     }
+
     .check__box {
         margin-right: 2px;
     }
+
     .filter__square {
         height: 17px;
         width: 34px;
         font-size: 8px;
     }
+
     .reviews__item {
         height: 18px;
         width: 22px;
         line-height: 18px;
     }
+
     .room-detail--small {
         width: 198px;
         height: 295px;
     }
+
     .room-detail-img {
         height: 132px;
         padding-top: 110px;
     }
+
     .room-detail-item {
         font-size: 7px;
         height: 15px;
         margin-right: 5px;
         padding-left: 20px;
     }
+
     .room-detail__room-name {
         font-size: 9px;
     }
+
     .room-detail__room-title {
         font-size: 16px;
     }
+
     .room-detail__room-wrapper {
         padding: 16px;
     }
+
     .room-detail-about {
         font-size: 8px;
     }
+
     .bg-reviews {
         height: 15px;
         width: 21px;
@@ -457,19 +482,131 @@ hr {
         height: 205px;
         top: 36px;
     }
+
     .top--rooms {
         height: 205px;
     }
+
     .top__subtitle {
         font-size: 48px;
     }
+
     .top__subtitle--rooms {
         margin-top: 75px;
     }
+
     .content {
         flex-direction: column;
     }
+
     .filter {
         min-width: 527px;
+        margin: 0 auto;
     }
+
+    .rooms {
+        padding-left: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .filter__title {
+        text-align: center;
+    }
+
+    .form {
+        display: grid;
+        justify-items: center;
+        row-gap: 35px;
+
+    }
+
+    .date-guests {
+        height: 220px;
+    }
+
+    .filter__title {
+        font-size: 22px;
+    }
+
+    .filter__title--white {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .filter__items {
+        column-gap: 170px;
+        row-gap: 15px;
+    }
+
+    .filter__item {
+        white-space: nowrap;
+    }
+
+    .filter__label {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .filter__input {
+        font-size: 36px;
+    }
+
+    .filter__month {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .filter__item--date {
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        grid-template-areas:
+            "label"
+            "date"
+            "month";
+    }
+
+    .filter__input--date {
+        justify-self: center;
+    }
+
+    .services__items {
+        column-gap: 170px;
+    }
+
+    .filter__square {
+        font-size: 16px;
+    }
+
+    .reviews__item {
+        margin-right: 35px;
+        width: 45px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .rooms__title {
+        display: block;
+        font-size: 22px;
+        text-align: center;
+        font-family: 'Gilda Display', serif;
+        letter-spacing: -0.6px;
+    }
+
+    .rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .room-detail--small {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .room-detail-items {
+        display: none;
+
+    }
+
 }
